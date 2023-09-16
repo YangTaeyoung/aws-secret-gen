@@ -45,7 +45,12 @@ $ aws-secret-gen -c <config path> -o <output path>
 | `-o` | The file path to save the Secrets retrieved from AWS Secrets Manager (can include the extension.) | ✅ No default value (required)      |
 
 ## Trouble Shooting 👊
-zsh: command not found: aims-cli
+
+```bash
+$ aws-secret-gen
+> zsh: command not found: aims-cli
+```
+
 go로 설치한 프로그램을 실행할 때 발생하는 에러입니다. ~/.zshrc 파일(혹은 ~/.bashrc)의 하단에 다음과 같이 환경변수를 추가합니다.
 
 error that occurs when running a program installed with go. Add the environment variable as follows at the bottom of the ~/.zshrc file (or ~/.bashrc).
